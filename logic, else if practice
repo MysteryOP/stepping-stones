@@ -1,0 +1,22 @@
+"challenge is input/please enter test speed, X, please enter stop distance, Y, car passed/failed"
+"speeds can only be 30 or 50"
+
+import math
+import os
+
+speed = int(input("please enter test speed"))
+if speed == 30:
+    SD1 = math.ceil(float(input("please input tested stopping distance")))
+elif speed == 50:
+    SD2 = math.ceil(float(input("please input tested stopping distance")))
+
+
+else:
+    print("invalid speed")
+    exit(1)
+
+if (speed == 30 and SD1 <=14) or (speed == 50 and SD2 <=38):
+    result = "car passed the test"
+else:
+    result = "car failed the test"
+print(result)

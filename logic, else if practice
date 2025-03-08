@@ -20,3 +20,6 @@ if (speed == 30 and SD1 <=14) or (speed == 50 and SD2 <=38):
 else:
     result = "car failed the test"
 print(result)
+
+
+"this is just something you run in the terminal on visual studio code so yk"
